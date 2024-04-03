@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack --mode development"
-  },
-  "prettier": {
-    "singleQuote": true
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
