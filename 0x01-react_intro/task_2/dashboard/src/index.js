@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Notification } from "./Notification";
+import { Notifications } from "./Notifications";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="root-notifications">
-      <Notification />
+      <Notifications />
     </div>
     <App />
   </React.StrictMode>

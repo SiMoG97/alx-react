@@ -1,12 +1,12 @@
 import React from "react";
-import "./Notification.css";
+import "./Notifications.css";
 import closeIcon from "./close-icon.png";
 import { getLatestNotification } from "./utils";
 
-export function Notification() {
+export function Notifications() {
   return (
-    <div className="Notification">
-      Here is the list of notifications
+    <div className="Notifications">
+      <p>Here is the list of notifications</p>
       <button
         aria-label="Close"
         style={{
