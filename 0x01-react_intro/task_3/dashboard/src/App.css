@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: solid 1px red; */
+}
+
+:root {
+  --primary-color: #e0354b;
+  --border: solid 4px var(--primary-color);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* app header */
+
+.App-header {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border);
+  font-family: sans-serif;
+}
+
+.App-header h1 {
+  color: var(--primary-color);
+}
+
+.App-header img {
+  width: 200px;
+  height: 200px;
+}
+
+/* app body */
+
+.App-body {
+  padding: 2rem;
+}
+
+.App-body input {
+  margin: 1rem;
+}
+
+/* app footer */
+
+.App-footer {
+  border-top: var(--border);
+  text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
+  font-style: italic;
+}
