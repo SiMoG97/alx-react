@@ -1,0 +1,10 @@
+table,
+th {
+  border: 1px solid #dcdcdc;
+}
+table {
+  --margin: 1rem;
+  margin: var(--margin);
+  width: calc(100% - 2 * var(--margin));
+  border-collapse: collapse;
+}
