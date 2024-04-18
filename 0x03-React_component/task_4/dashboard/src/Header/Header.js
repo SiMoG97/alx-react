@@ -1,0 +1,15 @@
+import React from "react";
+import "./Header.css";
+import logo from "../assets/holberton_logo.jpg";
+import WidthLogging from "../HOC/WithLogging";
+
+function Header() {
+  return (
+    <header className="header">
+      <img src={logo} alt="logo" />
+      <h1>School dashboard</h1>
+    </header>
+  );
+}
+
+export default Header;

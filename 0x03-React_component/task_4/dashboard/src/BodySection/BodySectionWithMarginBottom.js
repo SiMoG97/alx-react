@@ -1,0 +1,27 @@
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import BodySection from "./BodySection";
+
+import "./BodySectionWithMarginBottom.css";
+import WidthLogging from "../HOC/WithLogging";
+
+class BodySectionWithMarginBottom extends Component {
+  render() {
+    return (
+      <div className="bodySectionWithMargin">
+        <BodySection {...this.props} />
+      </div>
+    );
+  }
+}
+
+BodySectionWithMarginBottom.proptypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+};
+
+BodySectionWithMarginBottom.defaultProps = {
+  children: <></>,
+};
+
+export default BodySectionWithMarginBottom;
