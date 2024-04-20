@@ -11,14 +11,6 @@ const styles = StyleSheet.create({
     padding: "16px",
   },
 
-  urgent: {
-    color: "red",
-  },
-
-  default: {
-    color: "blue",
-  },
-
   closeButton: {
     display: "inline-block",
     position: "absolute",
@@ -59,7 +51,6 @@ class Notifications extends Component {
                   value="No new notification for now"
                   markAsRead={this.markAsRead}
                   id={0}
-                  styles={styles.default}
                 />
               ) : (
                 listNotifications.map(({ id, html, type, value }) => (
@@ -70,7 +61,6 @@ class Notifications extends Component {
                     type={type}
                     value={value}
                     markAsRead={this.markAsRead}
-                    styles={type === "default" ? styles.default : styles.urgent}
                   />
                 ))
               )}
