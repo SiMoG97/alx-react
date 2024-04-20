@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     color: "blue",
   },
 });
+
 class NotificationItem extends PureComponent {
   render() {
     const { id, type, html, value, markAsRead } = this.props;

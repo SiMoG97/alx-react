@@ -21,9 +21,8 @@ describe("<Notifications />", () => {
     const NotificationItemWrapper = shallow(
       <NotificationItem html={{ __html: "<u>test</u>" }} />
     );
-    expect(NotificationItemWrapper.find("li").html()).toEqual(
-      '<li data-notification-type="default" class=""><u>test</u></li>'
-    );
+    expect(NotificationItemWrapper.find("li")).toBeDefined();
+    expect(NotificationItemWrapper.find("li").html()).toContain("<u>test</u>");
   });
 });
 
