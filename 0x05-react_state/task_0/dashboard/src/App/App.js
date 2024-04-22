@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
 class App extends Component {
   constructor(props) {
     super(props);
-    this.handleKeyCombination = this.handleKeyPressed.bind(this);
+    this.handleKeyPressed = this.handleKeyPressed.bind(this);
     this.handleDisplayDrawer = this.handleDisplayDrawer.bind(this);
     this.handleHideDrawer = this.handleHideDrawer.bind(this);
     this.state = { displayDrawer: false };
@@ -139,7 +139,7 @@ App.propTypes = {
 
 App.defaultProps = {
   isLoggedIn: false,
-  logOut() {},
+  logOut: () => {},
 };
 
 export default App;

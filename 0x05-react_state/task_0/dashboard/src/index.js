@@ -4,8 +4,8 @@ import App from "./App/App";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App isLoggedIn={true} /> */}
-    <App isLoggedIn={false} />
+    <App isLoggedIn={true} />
+    {/* <App isLoggedIn={false} /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
