@@ -94,10 +94,12 @@ class Notifications extends Component {
     return (
       <div>
         {!displayDrawer && (
-          <div className={css(styles.menuItem)}>Your notifications</div>
+          <div className={`${css(styles.menuItem)} menuItem`}>
+            Your notifications
+          </div>
         )}
         {displayDrawer ? (
-          <div className={css(styles.Notifications)}>
+          <div className={`${css(styles.Notifications)} Notifications`}>
             <p>Here is the list of notifications</p>
             <ul className={css(styles.ul)}>
               {listNotifications.length === 0 ? (

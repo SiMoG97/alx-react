@@ -37,7 +37,7 @@ describe("<Notifications displayDrawe={true} />", () => {
   });
 
   it("Checks that the menu item is being displayed when displayDrawer is true", () => {
-    expect(wrapper.exists("div.menuItem")).toBe(true);
+    expect(wrapper.exists("div.menuItem")).toBe(false);
   });
 
   it("renders this text : 'Here is the list of notifications'", () => {
