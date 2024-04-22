@@ -69,38 +69,39 @@ const styles = StyleSheet.create({
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      displayDrawer: false,
-    };
+    this.handleKeyCombination = this.handleKeyPressed.bind(this);
+    this.handleDisplayDrawer = this.handleDisplayDrawer.bind(this);
+    this.handleHideDrawer = this.handleHideDrawer.bind(this);
+    this.state = { displayDrawer: false };
   }
 
-  handleDisplayDrawer = () => {
+  handleDisplayDrawer() {
     this.setState({
       displayDrawer: true,
     });
-  };
+  }
 
-  handleHideDrawer = () => {
+  handleHideDrawer() {
     this.setState({
       displayDrawer: false,
     });
-  };
+  }
 
-  handleKeyPressed = (event) => {
+  handleKeyPressed(event) {
     if (event.ctrlKey && event.key === "h") {
       event.preventDefault();
       alert("Logging you out");
       this.props.logOut();
     }
-  };
+  }
 
-  componentDidMount = () => {
+  componentDidMount() {
     window.addEventListener("keydown", this.handleKeyPressed);
-  };
+  }
 
-  componentWillUnmount = () => {
+  componentWillUnmount() {
     window.removeEventListener("keydown", this.handleKeyPressed);
-  };
+  }
   render() {
     return (
       <div className={css(styles.body, styles.small)}>

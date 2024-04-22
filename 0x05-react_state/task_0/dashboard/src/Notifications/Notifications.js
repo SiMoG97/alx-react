@@ -79,9 +79,13 @@ const styles = StyleSheet.create({
 });
 
 class Notifications extends Component {
-  markAsRead = (id) => {
+  constructor(props) {
+    super(props);
+    this.markAsRead = this.markAsRead.bind(this);
+  }
+  markAsRead(id) {
     console.log(`Notification ${id} has been marked as read`);
-  };
+  }
 
   shouldComponentUpdate(nextProps) {
     return (
