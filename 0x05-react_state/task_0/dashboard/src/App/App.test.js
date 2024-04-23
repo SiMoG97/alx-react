@@ -75,17 +75,15 @@ describe("displayDrawer state tests", () => {
 
   it("Verifies that after calling handleDisplayDrawer, the state should now be true", () => {
     wrapper.setState({ displayDrawer: false });
-    const instance = wrapper.instance();
+    wrapper.instance().handleDisplayDrawer();
 
-    instance.handleDisplayDrawer();
     expect(wrapper.state().displayDrawer).toEqual(true);
   });
 
   it("Verifies that after calling handleHideDrawer, the state should now be false", () => {
     wrapper.setState({ displayDrawer: true });
-    const instance = wrapper.instance();
+    wrapper.instance().handleHideDrawer();
 
-    instance.handleHideDrawer();
     expect(wrapper.state().displayDrawer).toEqual(false);
   });
 });
