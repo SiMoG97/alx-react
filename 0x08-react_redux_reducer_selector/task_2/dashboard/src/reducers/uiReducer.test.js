@@ -1,6 +1,3 @@
-import { Map } from "immutable";
-import { SELECT_COURSE } from "../actions/courseActionTypes";
-import { DISPLAY_NOTIFICATION_DRAWER } from "../actions/uiActionTypes";
 import { initialState, uiReducer } from "./uiReducer";
 import { selectCourse } from "../actions/courseActionCreators";
 import { displayNotificationDrawer } from "../actions/uiActionCreators";
