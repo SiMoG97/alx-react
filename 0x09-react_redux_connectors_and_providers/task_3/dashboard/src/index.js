@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { composeWithDevTools } from "@redux-devtools/extension";
+// import { composeWithDevTools } from "@redux-devtools/extension";
+import { composeWithDevTools } from "redux-devtools-extension";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { thunk } from "redux-thunk";
